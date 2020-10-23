@@ -11,7 +11,7 @@ import androidx.room.Query
  * @Dao -> Identifies it as a DAO class for Room.
  * @Insert -> Special DAO method annotation where you don't have to provide any SQL!
  *         -> There are similar @Update and @Delete
- * OnConflictStrategy.IGNORE -> The selected onConflict stratege ignores a new word if it's exactly the same as one already in the list.
+ * OnConflictStrategy.IGNORE -> The selected onConflict strategy ignores a new word if it's exactly the same as one already in the list.
  * deleteAll() -> There is no convenience annotation for deleting multiple entities, So it is implemented as @Query
  * @Query -> Query requires that you provide a SQL query as a string parameter to the annotation.
  *        -> Should know how to use basic SQLite grammar.

@@ -1,4 +1,4 @@
-package com.example.androidsamples.architectureCopmonent
+package com.example.androidsamples.architectureComponent
 
 import android.app.Activity
 import android.content.Intent
@@ -10,7 +10,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.androidsamples.R
-import com.example.androidsamples.architectureCopmonent.data.Word
+import com.example.androidsamples.architectureComponent.data.Word
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class ArchitectureComponentActivity : AppCompatActivity() {

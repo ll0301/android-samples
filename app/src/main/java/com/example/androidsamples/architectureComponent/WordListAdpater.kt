@@ -1,4 +1,4 @@
-package com.example.androidsamples.architectureCopmonent
+package com.example.androidsamples.architectureComponent
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.androidsamples.R
-import com.example.androidsamples.architectureCopmonent.data.Word
+import com.example.androidsamples.architectureComponent.data.Word
 
 class WordListAdapter internal constructor(
     context: Context

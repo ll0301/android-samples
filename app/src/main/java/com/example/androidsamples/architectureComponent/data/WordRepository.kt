@@ -1,4 +1,4 @@
-package com.example.androidsamples.architectureCopmonent.data
+package com.example.androidsamples.architectureComponent.data
 
 import androidx.lifecycle.LiveData
 

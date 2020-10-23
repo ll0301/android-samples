@@ -1,4 +1,4 @@
-package com.example.androidsamples.architectureCopmonent
+package com.example.androidsamples.architectureComponent
 
 import android.app.Activity
 import android.content.Intent

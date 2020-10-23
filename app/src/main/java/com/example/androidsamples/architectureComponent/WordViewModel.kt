@@ -1,12 +1,12 @@
-package com.example.androidsamples.architectureCopmonent
+package com.example.androidsamples.architectureComponent
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.viewModelScope
-import com.example.androidsamples.architectureCopmonent.data.Word
-import com.example.androidsamples.architectureCopmonent.data.WordRepository
-import com.example.androidsamples.architectureCopmonent.data.WordRoomDatabase
+import com.example.androidsamples.architectureComponent.data.Word
+import com.example.androidsamples.architectureComponent.data.WordRepository
+import com.example.androidsamples.architectureComponent.data.WordRoomDatabase
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 

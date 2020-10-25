@@ -28,7 +28,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.androidsamples.LogApplication
 import com.example.androidsamples.R
 import com.example.androidsamples.data.Log
+import com.example.androidsamples.data.LoggerDataSource
 import com.example.androidsamples.data.LoggerLocalDataSource
+import com.example.androidsamples.di.InMemoryLogger
 import com.example.androidsamples.util.DateFormatter
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
@@ -36,7 +38,8 @@ import javax.inject.Inject
 @AndroidEntryPoint
 class LogsFragment : Fragment() {
 
-    @Inject lateinit var logger: LoggerLocalDataSource
+    @InMemoryLogger
+    @Inject lateinit var logger: LoggerDataSource
     @Inject lateinit var dateFormatter: DateFormatter
 
     private lateinit var recyclerView: RecyclerView

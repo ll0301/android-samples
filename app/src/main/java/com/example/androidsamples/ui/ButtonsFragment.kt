@@ -28,6 +28,8 @@ import com.example.androidsamples.data.LoggerLocalDataSource
 import com.example.androidsamples.navigator.AppNavigator
 import com.example.androidsamples.navigator.Screens
 import com.example.androidsamples.R
+import com.example.androidsamples.data.LoggerDataSource
+import com.example.androidsamples.di.InMemoryLogger
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
@@ -37,7 +39,8 @@ import javax.inject.Inject
 @AndroidEntryPoint
 class ButtonsFragment : Fragment() {
 
-    @Inject lateinit var logger: LoggerLocalDataSource
+    @InMemoryLogger
+    @Inject lateinit var logger: LoggerDataSource
     @Inject lateinit var navigator: AppNavigator
 
     override fun onCreateView(

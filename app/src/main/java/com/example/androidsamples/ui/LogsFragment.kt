@@ -30,11 +30,14 @@ import com.example.androidsamples.R
 import com.example.androidsamples.data.Log
 import com.example.androidsamples.data.LoggerLocalDataSource
 import com.example.androidsamples.util.DateFormatter
+import dagger.hilt.android.AndroidEntryPoint
+import javax.inject.Inject
 
+@AndroidEntryPoint
 class LogsFragment : Fragment() {
 
-    private lateinit var logger: LoggerLocalDataSource
-    private lateinit var dateFormatter: DateFormatter
+    @Inject lateinit var logger: LoggerLocalDataSource
+    @Inject lateinit var dateFormatter: DateFormatter
 
     private lateinit var recyclerView: RecyclerView
 
@@ -52,7 +55,7 @@ class LogsFragment : Fragment() {
         }
     }
 
-    override fun onAttach(context: Context) {
+/*    override fun onAttach(context: Context) {
         super.onAttach(context)
 
         populateFields(context)
@@ -74,7 +77,7 @@ class LogsFragment : Fragment() {
                     dateFormatter
                 )
         }
-    }
+    }*/
 }
 
 /**

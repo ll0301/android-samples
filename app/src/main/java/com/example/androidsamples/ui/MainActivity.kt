@@ -6,7 +6,9 @@ import com.example.androidsamples.LogApplication
 import com.example.androidsamples.R
 import com.example.androidsamples.navigator.AppNavigator
 import com.example.androidsamples.navigator.Screens
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
     private lateinit var navigator: AppNavigator
@@ -14,8 +16,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        navigator = (applicationContext as LogApplication).serviceLocator.provideNavigator(this)
 
         if (savedInstanceState == null) {
             navigator.navigateTo(Screens.BUTTONS)

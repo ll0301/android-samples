@@ -7,11 +7,12 @@ import com.example.androidsamples.R
 import com.example.androidsamples.navigator.AppNavigator
 import com.example.androidsamples.navigator.Screens
 import dagger.hilt.android.AndroidEntryPoint
+import javax.inject.Inject
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var navigator: AppNavigator
+    @Inject lateinit var navigator: AppNavigator
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

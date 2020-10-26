@@ -9,13 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidSamples">
-        <activity android:name=".MainActivity">
+        <activity android:name=".dataBinding.SolutionActivity5">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".dataBinding.SolutionActivity4" />
+        <activity android:name=".dataBinding.SolutionActivity3" />
+        <activity android:name=".dataBinding.SolutionActivity2" />
+        <activity android:name=".dataBinding.SolutionActivity1" />
+        <activity android:name=".dataBinding.DataBindingActivity" />
+        <activity android:name=".architectureComponent.NewWordActivity" />
+        <activity android:name=".architectureComponent.ArchitectureComponentActivity" />
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>
